@@ -3,7 +3,7 @@ import { Wrench, Github, Twitter, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-950 border-t border-slate-800 absolute bottom-0 w-full text-slate-400">
+    <footer className="bg-slate-950 border-t border-slate-800 bottom-0 w-full text-slate-400">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-slate-400">
           {/* Left side - Version badges and links */}

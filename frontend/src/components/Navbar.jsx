@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, Wrench } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,21 +16,24 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="hover:text-emerald-400 transition">
+            <Link to="/" className="hover:text-emerald-400 transition">
               Home
-            </a>
-            <a href="#about" className="hover:text-emerald-400 transition">
+            </Link>
+            <Link to="/about" className="hover:text-emerald-400 transition">
               About
-            </a>
-            <a href="#tools" className="hover:text-emerald-400 transition">
+            </Link>
+            <Link to="/tools" className="hover:text-emerald-400 transition">
               Tools
-            </a>
-            <a href="#contact" className="hover:text-emerald-400 transition">
+            </Link>
+            <Link to="/contact" className="hover:text-emerald-400 transition">
               Contact
-            </a>
-            <button className="bg-emerald-500 hover:bg-emerald-600 px-6 py-2 rounded-lg font-semibold transition">
+            </Link>
+            <Link
+              to="/get-started"
+              className="bg-emerald-500 hover:bg-emerald-600 px-6 py-2 rounded-lg font-semibold transition"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -41,30 +45,33 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3">
-            <a href="#home" className="block hover:text-emerald-400 transition">
+            <Link to="/" className="block hover:text-emerald-400 transition">
               Home
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="/about"
               className="block hover:text-emerald-400 transition"
             >
               About
-            </a>
-            <a
-              href="#tools"
+            </Link>
+            <Link
+              to="/tools"
               className="block hover:text-emerald-400 transition"
             >
               Tools
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="block hover:text-emerald-400 transition"
             >
               Contact
-            </a>
-            <button className="w-full bg-emerald-500 hover:bg-emerald-600 px-6 py-2 rounded-lg font-semibold transition">
+            </Link>
+            <Link
+              to="/get-started"
+              className="block w-full bg-emerald-500 hover:bg-emerald-600 px-6 py-2 rounded-lg font-semibold transition"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
         )}
       </div>
