@@ -26,7 +26,7 @@ You can register it in `pages/Tools.jsx` to make it available in the UI.
 
 1. **Fork the repo** and clone it locally:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/toolkithub.git
+   git clone https://github.com/ashutoshverma23/toolkithub.git
    cd toolkithub
 Install dependencies:
 
