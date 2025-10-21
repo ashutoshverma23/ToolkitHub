@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import YouTubeMarkdownEmbedder from "../tools/YouTubeMarkdownEmbedder";
+import UrlShortner from "../tools/UrlShortner";
 
 const Tools = () => {
   const [activeTool, setActiveTool] = useState(null);
@@ -11,6 +12,12 @@ const Tools = () => {
       name: "YouTube Markdown Embedder",
       description: "Embed YouTube videos inside Markdown with ease.",
       component: <YouTubeMarkdownEmbedder />,
+    },
+    {
+      id: "url-shortener",
+      name: "URL Shortener",
+      description: "Shorten long URLs quickly and easily.",
+      component: <UrlShortner />,
     },
     // Add more tools later
   ];
