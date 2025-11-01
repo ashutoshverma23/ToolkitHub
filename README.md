@@ -24,21 +24,25 @@ You can register it in `pages/Tools.jsx` to make it available in the UI.
 
 ## 🚀 Getting Started
 
-1. **Fork the repo** and clone it locally:
-   ```bash
-   git clone https://github.com/ashutoshverma23/toolkithub.git
-   cd toolkithub
-Install dependencies:
+1. **Fork the repo and clone it locally**:
+   ```
+   git clone https://github.com/<your-username>/toolkithub.git
+   ```
+2. **Then open the folder in your Code Editor and in Terminal**
+   ```
+   cd frontend
+   ```
+3. **Install dependencies:**
 
-```
-npm install
-```
-Run locally:
+   ```
+   npm install
+   ```
+4. **Run locally:**
 
-```
-npm run dev
-```
-Open http://localhost:5173 in your browser.
+   ```
+   npm run dev
+   ```
+5. **Open http://localhost:5173 in your browser.**
 
 ## 📝 Contribution Guidelines
 
